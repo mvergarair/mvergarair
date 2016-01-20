@@ -14,9 +14,10 @@ end
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
+  gem 'sqlite3', '~> 1.3', '>= 1.3.11'
 end
+
 gem 'pg'
-gem 'sqlite3', '~> 1.3', '>= 1.3.11'
 gem 'puma'
 gem 'slim-rails'
 group :development do
