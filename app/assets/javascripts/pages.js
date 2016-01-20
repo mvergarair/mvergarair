@@ -4,4 +4,7 @@
 
 $( document ).ready(function(){
 	$(".button-collapse").sideNav();
+	$('h1').fadeIn(1500, function (){
+		$('h4').fadeIn(500);
+	});
 });
