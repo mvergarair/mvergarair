@@ -2,19 +2,27 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.full-page {
+	height: 100%;
+}
+
+.cyan {
+	background-color: #00BCD4;
+}
+
+
+
 .container {
 	color: #fff;
+	font-weight: 100;
 
-	.full-page {
-		margin-top: 10%;
-		height: 80%;
-	}
-
-	.first-section {
+	.section {
 		background-color: #0097A7;
+		padding: 2em 5em 2em 5em;
+		height: 80%;
 		
 		h1 {
-			padding-top: 10%;
+			font-size: 4.2em;
 			display: none;
 		}
 
@@ -24,17 +32,23 @@
 			padding-top: 5%;	
 		}
 
-
-		.m-t-0 {
-			margin-top: 0;
+		p {
+			margin-top: 15%;
+			font-size: 2.0em;
+			font-weight: 100;
+			display: none;
 		}
 
-		.m-l-5{
-			margin-left: 5%;
+		label {
+			color: #fff;
+			font-size: 1.3em;
 		}
 
 		.f-w-100{
 			font-weight: 100;
+		}
+		.f-w-300{
+			font-weight: 300;
 		}
 	}
 

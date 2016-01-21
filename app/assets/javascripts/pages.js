@@ -4,7 +4,14 @@
 
 $( document ).ready(function(){
 	$(".button-collapse").sideNav();
-	$('h1').fadeIn(1500, function (){
-		$('h4').fadeIn(500);
+	$('h1').fadeIn(500, function (){
+		console.log('hola');
+		$('.flow-text').fadeIn(500,function(){
+			$('.right-align').fadeIn(500);
+		});
 	});
+
+	window.setInterval(function(){
+
+	}, 5000);
 });
