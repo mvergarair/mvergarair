@@ -17,7 +17,7 @@ $( document ).ready(function(){
     if(go){
       $.ajax({
           headers: {'X-CSRF-Token': $("meta[name='csrf-token']").attr("content") },
-          url:   'https://mvergarair.cl/random_quote' ,
+          url:   'http://mvergarair.cl/random_quote' ,
           type:  'get',
           beforeSend: function () {
             go = false;
