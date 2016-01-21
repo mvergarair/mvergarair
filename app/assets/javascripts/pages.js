@@ -23,7 +23,6 @@ $( document ).ready(function(){
             go = false;
           },
           success:  function (response) {
-            console.log(response);
             $('#author').hide();
             $('#quote').hide().text(response.phrase).fadeIn(2500, function(){
                 $('#author').text("-"+ response.author).css('font-style', 'italic').fadeIn(500);;
