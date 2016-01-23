@@ -17,8 +17,9 @@
 	font-weight: 100;
 
 	.section {
-		padding: 2em 5em 2em 5em;
+		padding: 1em 3em 1em 3em;
 		height: 80%;
+		text-align: center;
 		
 		h1 {
 			font-size: 4.2em;
@@ -55,6 +56,18 @@
 		}
 	}
 
+
+}
+
+@media only screen and (min-width: 601px){
+	.container {
+		.section {
+			padding: 2em 5em 2em 5em;
+			text-align: left;
+		}
+
+	}
+	
 
 }
 

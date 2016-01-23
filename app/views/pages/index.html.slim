@@ -1,14 +1,16 @@
 .full-page.valign-wrapper.cyan.lighten-2#1
   .container
-    .section.card-panel.z-depth-2.cyan
-      h1.f-w-100
-        | mvergarair
-      p.center-align.flow-text#quote
-        = @quote.phrase
-      p.right-align.f-w-300#author
-        | - 
-        i 
-          = @quote.author
+    .row
+      .col.s12.m12.l12
+        .section.card-panel.z-depth-2.cyan
+          h2.f-w-100
+            | mvergarair
+          p.center-align.flow-text#quote
+            = @quote.phrase
+          p.right-align.f-w-300#author
+            | - 
+            i 
+              = @quote.author
 .full-page.valign-wrapper.teal.lighten-2#2
   .container
     .section.card-panel.z-depth-2.teal
@@ -18,7 +20,7 @@
         | Puede escribirme un mensaje 
         a.light href=''
           | aquí
-.full-page.valign-wrapper.red.lighten-2#3
+full-page.valign-wrapper.red.lighten-2#3
   .container
     .section.card-panel.z-depth-2.red
       h1.f-w-100

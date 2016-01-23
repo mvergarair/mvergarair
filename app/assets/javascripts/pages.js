@@ -16,31 +16,30 @@ $( document ).ready(function(){
 	});
 
   var lastScrollTop = 0;
-  $(window).scroll(function(event){
-    if(scrollLock){
-      scrollLock = false;
-      console.log(currentSectionId);
-      console.log(currentSectionId+1);
-      console.log($("#" + (currentSectionId+1).toString()))
-      var st = $(this).scrollTop();
-      if (st > lastScrollTop){
-        $( "html,body" ).animate({
-          scrollTop: $("#" + (currentSectionId +1).toString()).offset().top
-        }, 1500, function() {
-          currentSectionId ++; 
-          scrollLock = true;
-        });
-      } else {
-        $( "html,body" ).animate({
-          scrollTop: $("#" + (currentSectionId -1).toString()).offset().top
-        }, 1500, function() {
-          currentSectionId --;
-          scrollLock = true;
-        });
-      }
-      lastScrollTop = st;
-    }
-  });
+  // $(window).scroll(function(event){
+  //   if(scrollLock){
+  //     scrollLock = false;
+  //     console.log(currentSectionId);
+  //     console.log(currentSectionId+1);
+  //     var st = $(this).scrollTop();
+  //     if (st > lastScrollTop){
+  //       $( "html,body" ).animate({
+  //         scrollTop: $("#" + (currentSectionId +1).toString()).offset().top
+  //       }, 1500, function() {
+  //         currentSectionId ++; 
+  //         scrollLock = true;
+  //       });
+  //     } else {
+  //       $( "html,body" ).animate({
+  //         scrollTop: $("#" + (currentSectionId -1).toString()).offset().top
+  //       }, 1500, function() {
+  //         currentSectionId --;
+  //         scrollLock = true;
+  //       });
+  //     }
+  //     lastScrollTop = st;
+  //   }
+  // });
 
 
 	window.setInterval(function(){
