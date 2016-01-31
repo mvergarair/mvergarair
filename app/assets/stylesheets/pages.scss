@@ -10,11 +10,35 @@
 	background-color: #00BCD4;
 }
 
+#modal1 {
+	max-height: 70%;
 
+}
+.modal .container .modal-content{
+	padding: 24px 0 5px 0;
+}
+
+.f-c {
+	display: flex;
+	justify-content:center;
+}
 
 .container {
 	color: #fff;
 	font-weight: 100;
+
+		
+		.modal-content {
+			color: #222;
+
+			h4 {
+				font-size: 2.18em;
+				color:rgb(38, 166, 154);
+				text-align: center;
+			}
+
+		}
+
 
 	.section {
 		padding: 1em 3em 1em 3em;
@@ -34,9 +58,9 @@
 
 		p {
 			margin-top: 15%;
-			font-size: 2.0em;
+			font-size: 1.3em;
 			font-weight: 100;
-			display: none;
+
 		}
 
 		label {
@@ -54,6 +78,10 @@
 		.light {
 			color: #b2dfdb;
 		}
+
+		.btn {
+			margin: 10px auto;
+		}
 	}
 
 
@@ -61,9 +89,25 @@
 
 @media only screen and (min-width: 601px){
 	.container {
+
+		.modal-content{
+
+			h4{
+				font-size: 2.28em;
+			}
+			#message_content{
+				min-height: 5.7em;
+			}
+		}
+
 		.section {
 			padding: 2em 5em 2em 5em;
 			text-align: left;
+
+			p {
+				font-size: 2em;
+			}
+
 		}
 
 	}

@@ -1,13 +1,14 @@
 # == Schema Information
 #
-# Table name: quotes
+# Table name: messages
 #
 #  id         :integer          not null, primary key
-#  phrase     :string
-#  author     :string
+#  name       :string
+#  email      :string
+#  content    :text
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
 
-class Quote < ActiveRecord::Base
+class Message < ActiveRecord::Base
 end

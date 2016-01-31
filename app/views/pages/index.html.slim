@@ -5,23 +5,25 @@
         .section.card-panel.z-depth-2.cyan
           h2.f-w-100
             | mvergarair
-          p.center-align.flow-text#quote
+          p.center-align.flow-text#quote.hidden
             = @quote.phrase
-          p.right-align.f-w-300#author
+          p.right-align.f-w-300#author.hidden
             | - 
             i 
               = @quote.author
 .full-page.valign-wrapper.teal.lighten-2#2
   .container
     .section.card-panel.z-depth-2.teal
-      h1.f-w-100
-        | Contacto
-      p.center-align.flow-text
-        | Puede escribirme un mensaje 
-        a.light href=''
-          | aquí
-full-page.valign-wrapper.red.lighten-2#3
+      h2.f-w-100
+        | Matías Vergara
+      p.left-align.flow-text
+        | I am a software engineer with special interest in Android and Ruby on Rails development. Currently, I study computer science at PUC.
+      .center-text
+        a.waves-effect.waves-light.btn.modal-trigger href="#modal1" 
+          | Contact me
+.full-page.valign-wrapper.red.lighten-2#3
   .container
     .section.card-panel.z-depth-2.red
-      h1.f-w-100
-        | Proyectos
+      h2.f-w-100
+        | Projects
+= render 'contact'

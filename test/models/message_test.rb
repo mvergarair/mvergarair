@@ -1,17 +1,18 @@
 # == Schema Information
 #
-# Table name: quotes
+# Table name: messages
 #
 #  id         :integer          not null, primary key
-#  phrase     :string
-#  author     :string
+#  name       :string
+#  email      :string
+#  content    :text
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
 
 require 'test_helper'
 
-class QuoteTest < ActiveSupport::TestCase
+class MessageTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

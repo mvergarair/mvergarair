@@ -8,14 +8,16 @@ $( document ).ready(function(){
   var currentSectionId = 1;
   var scrollLock = true;
 
-	$(".button-collapse").sideNav();
-	$('h1').fadeIn(800, function (){
-		$('.flow-text').fadeIn(2500,function(){
-			$('.right-align').fadeIn(500);
+
+  $('.modal-trigger').leanModal();
+
+	$('h2').fadeIn(800, function (){
+		$('#quote').fadeIn(2500,function(){
+			$('#author').fadeIn(500);
 		});
 	});
 
-  var lastScrollTop = 0;
+  // var lastScrollTop = 0;
   // $(window).scroll(function(event){
   //   if(scrollLock){
   //     scrollLock = false;
@@ -40,6 +42,21 @@ $( document ).ready(function(){
   //     lastScrollTop = st;
   //   }
   // });
+
+  $('#new_message').on("ajax:before" , function(){
+    $('#to-hide').hide();
+    $('#spinner').show();
+  }).on("ajax:complete", function(){
+    $('#to-hide').show();
+    $('#spinner').hide();
+    $('#modal1').closeModal();
+    $('.modal input').val('');
+    $('.modal input').toggleClass('valid');
+    $('.modal i').toggleClass('active');
+    $('.modal label').toggleClass('active');
+    $('.modal textarea').val('');
+    $('.modal textarea').toggleClass('valid',false);
+  });
 
 
 	window.setInterval(function(){

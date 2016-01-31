@@ -1,0 +1,26 @@
+=form_for @message , remote: true do |f| 
+  #modal1.modal.bottom-sheet
+    .container
+      .modal-content
+        h4 Send me a message!
+        .f-c
+          = render 'layouts/spinner'
+        .row#to-hide
+          .col.s12.m6
+            .input-field
+              i.material-icons.prefix account_circle
+              =f.text_field :name , class: "validate"
+              =f.label :name 
+            .input-field
+              i.material-icons.prefix email
+              =f.text_field :email , class: "validate"
+              =f.label :email 
+          .col.s12.m6
+            .input-field
+              i.material-icons.prefix mode_edit
+              =f.text_area :content , class: "materialize-textarea"
+              =f.label :content
+      .modal-footer
+        =f.button :submit, class: 'btn waves-effect waves-light pull-right'
+          i.material-icons.right send
+          | Send
