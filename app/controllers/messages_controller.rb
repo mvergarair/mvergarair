@@ -2,7 +2,7 @@ class MessagesController < ApplicationController
 
 	def create
 		message = Message.create message_params
-		AdminMailer.send_message(message).deliver_now
+		AdminMailer.send_message(message).deliver_now!
 		render json: {status: :ok} and return
 	end
 
