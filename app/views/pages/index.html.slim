@@ -21,9 +21,56 @@
       .center-text
         a.waves-effect.waves-light.btn.modal-trigger href="#modal1" 
           | Contact me
-.full-page.valign-wrapper.red.lighten-2#3
+.page.red.lighten-2#3
   .container
-    .section.card-panel.z-depth-2.red
-      h2.f-w-100
-        | Projects
+    h2.f-w-100.center-align
+      | Projects
+    .row
+      .col.s12.m6
+        a href='tribenefit.cl'
+          .card.hoverable
+              .card-image
+                = image_tag 'tribenefit-project.png'
+                span.card-title TriBenefit
+              .card-content
+                p
+                  | Tribenefit is a tecnological startup in the real estate industry. Full stack developer using the Ruby on Rails Framework. I helped the company launch it's tecnological platform and define the organization's software arquitecture, data structure and buisness model.
+              .card-action
+                a href="tribenefit.cl"  tribenefit.cl
+      .col.s12.m6
+        a href='http://medapp-g02r7ek8.cloudapp.net:8080'
+          .card.hoverable
+            .card-image
+              = image_tag 'medapp-project.png'
+              span.card-title Medapp
+            .card-content
+              p
+                | Medapp is a tecnological platform that helps patients and their families during hospitalization. I was part of the Medapp development team. Helped define the companies tecnológical requirements, buisness model and software arquitecture. 
+            .card-action
+              a href="http://medapp-g02r7ek8.cloudapp.net:8080/"  medapp.cl
+    .row
+      .col.s12.m6
+        a href="http://medapp-g02r7ek8.cloudapp.net:8080"
+          .card.hoverable
+            .card-image
+              = image_tag 'medapp-mobile-project.png'
+              span.card-title Medapp Mobile
+            .card-content
+              p
+                | Medapp Mobile is a way to comunicate patients and their families during a hospitalization. I worked as an Android developer and created a custom launcher for tablets for patients. Also developed a mobile app for the relatives of the patients that allows them to keep in touch.
+            .card-action
+              a href="http://medapp-g02r7ek8.cloudapp.net:8080/"  medapp.cl
+      .col.s12.m6
+        a href='pulcrum.herokuapp.com'
+          .card.hoverable
+            .card-image
+              = image_tag 'pulcrum-project.png'
+              span.card-title Pulcrum
+            .card-content
+              p
+                | Pulcrum is an energy startup that specializes in turbine and solar panel installment. Help launch the webpage and was the lead designer and developer. Also helped define buisness model and markenting strategy. 
+              br
+            .card-action
+              a href="pulcrum.herokuapp.com"  pulcurm.cl
+
 = render 'contact'
