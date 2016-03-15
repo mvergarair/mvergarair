@@ -6,8 +6,6 @@ class MessagesController < ApplicationController
 		render json: {status: :ok} and return
 	end
 
-
-
 	private 
 	def message_params
 		params.require(:message).permit(:name , :email, :content)
