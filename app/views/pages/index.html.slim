@@ -1,4 +1,4 @@
-.full-page.valign-wrapper.cyan.lighten-2#1
+/.full-page.valign-wrapper.cyan.lighten-2#1
   .container
     .row
       .col.s12.m12.l12
@@ -17,7 +17,7 @@
       h2.f-w-100
         | Matías Vergara
       p.left-align.flow-text
-        | I am a software engineer with special interest in Android and Ruby on Rails development. Currently, I study computer science at PUC.
+        | I am an industrial engineer with a mention in computer science from the Pontificia Universidad Católica of Chile. I have special interest in creating innovative tecnology that supports buisness processes. 
       .center-text
         a.waves-effect.waves-light.btn.modal-trigger href="#modal1" 
           | Contact me
@@ -36,31 +36,42 @@
                 p
                   | Tribenefit is a tecnological startup in the real estate industry. Full stack developer using the Ruby on Rails Framework. I helped the company launch it's tecnological platform and define the organization's software arquitecture, data structure and buisness model.
               .card-action
-                a href="tribenefit.cl"  tribenefit.cl
+                a href="http://tribenefit.cl"  tribenefit.cl
       .col.s12.m6
-        a href='http://medapp-g02r7ek8.cloudapp.net:8080'
+        a href='http://buscaliga.cl'
           .card.hoverable
             .card-image
-              = image_tag 'medapp-project.png'
-              span.card-title Medapp
+              = image_tag 'buscaliga-project.png'
+              span.card-title Buscaliga
             .card-content
               p
-                | Medapp is a tecnological platform that helps patients and their families during hospitalization. I was part of the Medapp development team. Helped define the companies tecnológical requirements, buisness model and software arquitecture. 
+                | Buscaliga is a website that helps football players find amateur leagues in Chile. League representatives can also publish valuable information on the site to attract more players. 
             .card-action
-              a href="http://medapp-g02r7ek8.cloudapp.net:8080/"  medapp.cl
+              a href="http://buscaliga.cl/"  buscaliga.cl
     .row
+      .col.s12.m6
+          a href='http://medapp-g02r7ek8.cloudapp.net:8080'
+            .card.hoverable
+              .card-image
+                = image_tag 'medapp-project.png'
+                span.card-title Medapp
+              .card-content
+                p
+                  | Medapp is a tecnological platform that helps patients and their families during hospitalization. I was part of the Medapp development team. Helped define the companies tecnológical requirements, buisness model and software arquitecture. 
+              .card-action
+                a href="http://medapp-g02r7ek8.cloudapp.net:8080/"  medapp.cl
       .col.s12.m6
         a href="http://medapp-g02r7ek8.cloudapp.net:8080"
           .card.hoverable
             .card-image
               = image_tag 'medapp-mobile-project.png'
-              span.card-title Medapp Mobile
+              span.card-title style='color: grey' Medapp Mobile 
             .card-content
               p
                 | Medapp Mobile is a way to comunicate patients and their families during a hospitalization. I worked as an Android developer and created a custom launcher for tablets for patients. Also developed a mobile app for the relatives of the patients that allows them to keep in touch.
             .card-action
               a href="http://medapp-g02r7ek8.cloudapp.net:8080/"  medapp.cl
-      .col.s12.m6
+      /.col.s12.m6
         a href='pulcrum.herokuapp.com'
           .card.hoverable
             .card-image
@@ -71,5 +82,7 @@
                 | Pulcrum is an energy startup that specializes in turbine and solar panel installment. Help launch the webpage and was the lead designer and developer. Also helped define buisness model and marketing strategy. 
             .card-action
               a href="pulcrum.herokuapp.com"  pulcurm.cl
+    /.row
+      
 
 = render 'contact'
